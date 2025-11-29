@@ -17,7 +17,11 @@ bool czy_bezkwadratowa(int n){
 int main(){
 	int n;
 	std::cin>>n;
+	if(n<=0){
+		std::cout<<"Wprowadzona liczba musi byc dodatania"<<std::endl;
+		return 0;
+	}
 	if(czy_bezkwadratowa(n)) std::cout<<n<<" "<<"liczba jest bezkwadratowa"<<std::endl;
-	else std::cout<<n<<" "<<"liczna nie jest bezkwadratowa"<<std::endl;
+	else std::cout<<n<<" "<<"liczba nie jest bezkwadratowa"<<std::endl;
 	return 0;
 }
